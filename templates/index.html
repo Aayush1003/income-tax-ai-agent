@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAN Autofill AI Agent</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Income Tax AI Agent</p>
+          <h1>PAN-based profile autofill</h1>
+        </div>
+      </header>
+
+      <main class="card-grid">
+        <section class="panel form-panel">
+          <label for="pan">PAN Number</label>
+          <input id="pan" type="text" maxlength="10" placeholder="ABCDE1234F" />
+
+          <label class="checkbox-row" for="consent">
+            <input id="consent" type="checkbox" />
+            I consent to fetch my verified identity details using this PAN.
+          </label>
+
+          <button id="fetchButton">Auto-fill details</button>
+          <div id="status" class="status neutral">Ready to validate PAN.</div>
+        </section>
+
+        <section class="panel form-panel">
+          <h2>Application form</h2>
+          <div class="fields-grid">
+            <div><label for="full_name">Full name</label><input id="full_name" /></div>
+            <div><label for="father_name">Father name</label><input id="father_name" /></div>
+            <div><label for="date_of_birth">Date of birth</label><input id="date_of_birth" type="date" /></div>
+            <div><label for="mobile">Mobile</label><input id="mobile" /></div>
+            <div class="span-2"><label for="address">Address</label><input id="address" /></div>
+            <div><label for="city">City</label><input id="city" /></div>
+            <div><label for="state">State</label><input id="state" /></div>
+            <div><label for="pincode">Pincode</label><input id="pincode" /></div>
+            <div><label for="email">Email</label><input id="email" type="email" /></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
